@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+    sun-panel:
+        image: hslr/sun-panel
+        container_name: sun-panel
+        volumes:
+            - '~/docker/sun-panel/database:/app/database'
+            - '~/docker/sun-panel/uploads:/app/uploads'
+            - '~/docker/sun-panel/conf:/app/conf'
+        ports:
+            - '3002:3002'
