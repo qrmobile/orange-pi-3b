@@ -1,0 +1,1 @@
+I have a domain and it is hosted on Cloudflare. I use pc3.xxxx.com as the IP for this machine and have configured the router for port forwarding. In additional, I have edit the crontab file will execute the .sh file every ten minutes.
