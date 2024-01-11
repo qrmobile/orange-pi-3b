@@ -1,5 +1,6 @@
 # orange-pi-3b
 My logbook is for recording various things using the Orange Pi 3B. This device will be placed in my home as a server and will run Ubuntu 22.04 (Jammy).
+
 Ubuntu list of release [https://wiki.ubuntu.com/Releases](https://wiki.ubuntu.com/Releases)
 
 Official website: [http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-3B.html](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-3B.html)
