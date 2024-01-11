@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+    alist:
+        image: 'xhofe/alist:latest'
+        container_name: alist
+        volumes:
+            - '~/docker/alist/data:/opt/alist/data'
+            - '~/download:/download' #download folder in my home drive
+        ports:
+            - '5244:5244'
+        environment:
+            - PUID=1001 #check your uid
+            - PGID=1001 #check your group id
+            - UMASK=022
+        restart: unless-stopped
