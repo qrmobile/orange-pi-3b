@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  youtube-dl:
+    image: "kmb32123/youtube-dl-server"
+      #    network_mode: "service:vpn"
+    volumes:
+      - '~/download:/youtube-dl'
+    restart: always
+    ports:
+      - 8200:8080
