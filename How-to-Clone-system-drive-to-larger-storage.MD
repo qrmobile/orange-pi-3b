@@ -14,9 +14,13 @@ Here's how to clone a system drive using the `dd` command:
    - Identify the device names for the source drive (e.g., /dev/sda) and the target drive (e.g., /dev/sdb).
 
 2. **Clone the source drive to the target drive:**
-   - Use the `dd` command to copy the entire source drive to the target drive. Replace 'X' and 'Y' with the appropriate letters for the source and target devices (e.g., sda and sdb):
+   - Use the `dd` command to copy the entire source drive to the target drive. Replace 'X' and 'Y' with the appropriate letters for the source and target devices (e.g., sda or mmcblk1 and sdb):
 ```
    sudo dd if=/dev/sdX of=/dev/sdY bs=4M status=progress
+```
+or
+```
+   sudo dd if=/dev/mmcblk1 of=/dev/sdb bs=4M status=progress
 ```
    - This process may take some time depending on the size of the drive.
 
